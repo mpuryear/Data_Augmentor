@@ -36,7 +36,8 @@ python augment_data.py
 ```
 
 ### Test output
-When running with the test function uncommented. 20 augmented images will be created and placed into the already created folders. 
+When running with the test function uncommented a data_aug folder and both a with and without folder will be created. 
+20 images will be generated and placed into those folders. The images folder and data_aug olders are only used for testing this code. 
 
 10 images will be placed into the ./data_aug/with/  folder
 10 images will be placed into the ./data_aug/without/  folder
