@@ -42,7 +42,7 @@ When running with the test function uncommented. 20 augmented images will be cre
 10 images will be placed into the ./data_aug/without/  folder
 
 ### Pretest file structure /  Post test file structure
-
+![Pre/Post file structures](https://i.imgur.com/GCKSkl8.png)
 
 
 
