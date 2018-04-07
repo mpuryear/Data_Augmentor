@@ -107,14 +107,14 @@ def test_function():
     num_images_to_gen = 10
     img_format = 'jpg'
     tag = 'data_aug'
-    output_dir = './data_aug/'
+    output_dir = './test_data/data_aug/'
 
     if not os.path.exists(output_dir):
          os.makedirs(output_dir)
     
     img_size = 224 
-    x_one = np.array(load_images('./images/with/', img_size))
-    x_two = np.array(load_images('./images/without/', img_size))
+    x_one = np.array(load_images('./test_data/images/with/', img_size))
+    x_two = np.array(load_images('./test_data/images/without/', img_size))
     
     y_one = np.ones((x_one.shape[0], 1))
     y_two = np.zeros((x_two.shape[0], 1))
@@ -151,4 +151,4 @@ def test_function():
     
 
 
-test_function()
+#test_function()
