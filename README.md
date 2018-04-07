@@ -36,11 +36,12 @@ python augment_data.py
 ```
 
 ### Test output
+
 When running with the test function uncommented a data_aug folder and both a with and without folder will be created. 
 20 images will be generated and placed into those folders. The images folder and data_aug olders are only used for testing this code. 
 
-10 images will be placed into the ./data_aug/with/  folder
-10 images will be placed into the ./data_aug/without/  folder
+10 images will be placed into the ./test_data/data_aug/with/  folder
+10 images will be placed into the ./test_data/data_aug/without/  folder
 
 ### Pretest file structure /  Post test file structure
 ![Pre/Post file structures](https://i.imgur.com/GCKSkl8.png)
