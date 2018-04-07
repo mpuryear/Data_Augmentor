@@ -108,6 +108,9 @@ def test_function():
     img_format = 'jpg'
     tag = 'data_aug'
     output_dir = './data_aug/'
+
+    if not os.path.exists(output_dir):
+         os.makedirs(output_dir)
     
     img_size = 224 
     x_one = np.array(load_images('./images/with/', img_size))
@@ -117,6 +120,8 @@ def test_function():
     y_two = np.zeros((x_two.shape[0], 1))
 
     out_dir_with = output_dir + 'with'
+    if not os.path.exists(out_dir_with):
+        os.makedirs(out_dir_with)
     for files in os.listdir(out_dir_with):
         if files != '.AppleDouble' and files != '.DS_Store':
             os.remove(out_dir_with + '/' + files)
@@ -129,6 +134,9 @@ def test_function():
                                     out_dir_with)
 
     out_dir_without = output_dir + 'without'
+    if not os.path.exists(out_dir_without):
+        os.makedirs(out_dir_without)
+        
     for files in os.listdir(out_dir_without):
         if files != '.AppleDouble' and files != '.DS_Store':
             os.remove(out_dir_without + '/' +files)
